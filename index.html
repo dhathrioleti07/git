@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>University of Oxford Style</title>
+
+<style>
+
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: #f8f8f8;
+}
+
+/* HERO IMAGE SECTION */
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1541339907198-e08756dedf3f");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* DARK OVERLAY */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* TEXT IN CENTER */
+.hero-text {
+  position: absolute;
+  color: white;
+  left: 8%;
+  bottom: 20%;
+  max-width: 700px;
+}
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.hero-text p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* CONTENT SECTION */
+.content-section {
+  background: white;
+  padding: 80px 8%;
+}
+.content-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* GRID CARDS */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+.card {
+  background: #eaeaea;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 16px;
+}
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.card-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* FOOTER */
+.footer {
+  background: #002147;
+  color: white;
+  text-align: center;
+  padding: 28px 0;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<div class="hero-section">
+  <div class="hero-text">
+    <h1>University of Oxford</h1>
+    <p>
+      One of the world’s leading universities, tops global rankings
+      with a legacy of excellence in research and education. :contentReference[oaicite:0]{index=0}
+    </p>
+  </div>
+</div>
+
+<!-- CONTENT SECTION -->
+<div class="content-section">
+  <h2>Explore More</h2>
+
+  <div class="cards-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+      <div class="card-content">
+        <h3>Undergraduate</h3>
+        <p>Information on undergraduate courses and admissions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+      <div class="card-content">
+        <h3>Postgraduate</h3>
+        <p>Discover graduate programs and research pathways.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1">
+      <div class="card-content">
+        <h3>Research & Innovation</h3>
+        <p>Driving world-leading research with global impact.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © University of Oxford Style Static Page
+</div>
+
+</body>
+</html>
